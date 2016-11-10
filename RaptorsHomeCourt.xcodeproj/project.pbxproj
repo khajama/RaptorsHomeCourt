@@ -10,9 +10,17 @@
 		AE45A50F1DD4CC4600EEC956 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A50E1DD4CC4600EEC956 /* main.m */; };
 		AE45A5121DD4CC4600EEC956 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A5111DD4CC4600EEC956 /* AppDelegate.m */; };
 		AE45A5151DD4CC4600EEC956 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A5141DD4CC4600EEC956 /* ViewController.m */; };
-		AE45A5181DD4CC4600EEC956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE45A5161DD4CC4600EEC956 /* Main.storyboard */; };
 		AE45A51A1DD4CC4600EEC956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE45A5191DD4CC4600EEC956 /* Assets.xcassets */; };
 		AE45A51D1DD4CC4600EEC956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE45A51B1DD4CC4600EEC956 /* LaunchScreen.storyboard */; };
+		AE45A52B1DD4D03900EEC956 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE45A52A1DD4D03900EEC956 /* ViewController.xib */; };
+		AE45A52F1DD4D09100EEC956 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A52D1DD4D09100EEC956 /* LoginViewController.m */; };
+		AE45A5301DD4D09100EEC956 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE45A52E1DD4D09100EEC956 /* LoginViewController.xib */; };
+		AE45A53C1DD4D2DF00EEC956 /* SectionSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A53A1DD4D2DF00EEC956 /* SectionSelectViewController.m */; };
+		AE45A53D1DD4D2DF00EEC956 /* SectionSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE45A53B1DD4D2DF00EEC956 /* SectionSelectViewController.xib */; };
+		AE45A5411DD4D30E00EEC956 /* SeatSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A53F1DD4D30E00EEC956 /* SeatSelectViewController.m */; };
+		AE45A5421DD4D30E00EEC956 /* SeatSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE45A5401DD4D30E00EEC956 /* SeatSelectViewController.xib */; };
+		AE45A5461DD4D3C300EEC956 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A5441DD4D3C300EEC956 /* HomeViewController.m */; };
+		AE45A5471DD4D3C300EEC956 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +30,22 @@
 		AE45A5111DD4CC4600EEC956 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE45A5131DD4CC4600EEC956 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AE45A5141DD4CC4600EEC956 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AE45A5171DD4CC4600EEC956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE45A5191DD4CC4600EEC956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE45A51C1DD4CC4600EEC956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE45A51E1DD4CC4600EEC956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE45A52A1DD4D03900EEC956 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		AE45A52C1DD4D09100EEC956 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AE45A52D1DD4D09100EEC956 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AE45A52E1DD4D09100EEC956 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AE45A5391DD4D2DF00EEC956 /* SectionSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionSelectViewController.h; sourceTree = "<group>"; };
+		AE45A53A1DD4D2DF00EEC956 /* SectionSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionSelectViewController.m; sourceTree = "<group>"; };
+		AE45A53B1DD4D2DF00EEC956 /* SectionSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionSelectViewController.xib; sourceTree = "<group>"; };
+		AE45A53E1DD4D30E00EEC956 /* SeatSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeatSelectViewController.h; sourceTree = "<group>"; };
+		AE45A53F1DD4D30E00EEC956 /* SeatSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeatSelectViewController.m; sourceTree = "<group>"; };
+		AE45A5401DD4D30E00EEC956 /* SeatSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeatSelectViewController.xib; sourceTree = "<group>"; };
+		AE45A5431DD4D3C300EEC956 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		AE45A5441DD4D3C300EEC956 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +78,11 @@
 		AE45A50C1DD4CC4600EEC956 /* RaptorsHomeCourt */ = {
 			isa = PBXGroup;
 			children = (
-				AE45A5101DD4CC4600EEC956 /* AppDelegate.h */,
-				AE45A5111DD4CC4600EEC956 /* AppDelegate.m */,
-				AE45A5131DD4CC4600EEC956 /* ViewController.h */,
-				AE45A5141DD4CC4600EEC956 /* ViewController.m */,
-				AE45A5161DD4CC4600EEC956 /* Main.storyboard */,
+				AE45A5271DD4CD3C00EEC956 /* View Controllers */,
+				AE45A5261DD4CD3400EEC956 /* Nibs */,
+				AE45A5251DD4CD2C00EEC956 /* Images */,
+				AE45A5241DD4CD1800EEC956 /* Special Classes */,
 				AE45A5191DD4CC4600EEC956 /* Assets.xcassets */,
-				AE45A51B1DD4CC4600EEC956 /* LaunchScreen.storyboard */,
 				AE45A51E1DD4CC4600EEC956 /* Info.plist */,
 				AE45A50D1DD4CC4600EEC956 /* Supporting Files */,
 			);
@@ -77,6 +95,52 @@
 				AE45A50E1DD4CC4600EEC956 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE45A5241DD4CD1800EEC956 /* Special Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AE45A5101DD4CC4600EEC956 /* AppDelegate.h */,
+				AE45A5111DD4CC4600EEC956 /* AppDelegate.m */,
+			);
+			name = "Special Classes";
+			sourceTree = "<group>";
+		};
+		AE45A5251DD4CD2C00EEC956 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AE45A5261DD4CD3400EEC956 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */,
+				AE45A5401DD4D30E00EEC956 /* SeatSelectViewController.xib */,
+				AE45A53B1DD4D2DF00EEC956 /* SectionSelectViewController.xib */,
+				AE45A52E1DD4D09100EEC956 /* LoginViewController.xib */,
+				AE45A51B1DD4CC4600EEC956 /* LaunchScreen.storyboard */,
+				AE45A52A1DD4D03900EEC956 /* ViewController.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		AE45A5271DD4CD3C00EEC956 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE45A5131DD4CC4600EEC956 /* ViewController.h */,
+				AE45A5141DD4CC4600EEC956 /* ViewController.m */,
+				AE45A52C1DD4D09100EEC956 /* LoginViewController.h */,
+				AE45A52D1DD4D09100EEC956 /* LoginViewController.m */,
+				AE45A5391DD4D2DF00EEC956 /* SectionSelectViewController.h */,
+				AE45A53A1DD4D2DF00EEC956 /* SectionSelectViewController.m */,
+				AE45A53E1DD4D30E00EEC956 /* SeatSelectViewController.h */,
+				AE45A53F1DD4D30E00EEC956 /* SeatSelectViewController.m */,
+				AE45A5431DD4D3C300EEC956 /* HomeViewController.h */,
+				AE45A5441DD4D3C300EEC956 /* HomeViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +200,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE45A5301DD4D09100EEC956 /* LoginViewController.xib in Resources */,
+				AE45A53D1DD4D2DF00EEC956 /* SectionSelectViewController.xib in Resources */,
 				AE45A51D1DD4CC4600EEC956 /* LaunchScreen.storyboard in Resources */,
+				AE45A5421DD4D30E00EEC956 /* SeatSelectViewController.xib in Resources */,
+				AE45A52B1DD4D03900EEC956 /* ViewController.xib in Resources */,
+				AE45A5471DD4D3C300EEC956 /* HomeViewController.xib in Resources */,
 				AE45A51A1DD4CC4600EEC956 /* Assets.xcassets in Resources */,
-				AE45A5181DD4CC4600EEC956 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +217,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE45A52F1DD4D09100EEC956 /* LoginViewController.m in Sources */,
 				AE45A5151DD4CC4600EEC956 /* ViewController.m in Sources */,
 				AE45A5121DD4CC4600EEC956 /* AppDelegate.m in Sources */,
 				AE45A50F1DD4CC4600EEC956 /* main.m in Sources */,
+				AE45A53C1DD4D2DF00EEC956 /* SectionSelectViewController.m in Sources */,
+				AE45A5461DD4D3C300EEC956 /* HomeViewController.m in Sources */,
+				AE45A5411DD4D30E00EEC956 /* SeatSelectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AE45A5161DD4CC4600EEC956 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE45A5171DD4CC4600EEC956 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AE45A51B1DD4CC4600EEC956 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
