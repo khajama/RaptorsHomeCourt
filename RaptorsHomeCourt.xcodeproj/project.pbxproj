@@ -63,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE45A5901DEDBA1500EEC956 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +73,7 @@
 		AE45A5011DD4CC4600EEC956 = {
 			isa = PBXGroup;
 			children = (
+				AE45A58F1DEDBA1500EEC956 /* MapKit.framework */,
 				AE45A50C1DD4CC4600EEC956 /* RaptorsHomeCourt */,
 				AE45A50B1DD4CC4600EEC956 /* Products */,
 			);
@@ -104,8 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				AE45A50E1DD4CC4600EEC956 /* main.m */,
-				AE7C96881DDE1C6A0089A165 /* Data.h */,
-				AE7C96891DDE1C6A0089A165 /* Data.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,6 +129,7 @@
 		AE45A5261DD4CD3400EEC956 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				AE45A5751DDB932600EEC956 /* FoodViewController.xib */,
 				AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */,
 				AE45A5401DD4D30E00EEC956 /* SeatSelectViewController.xib */,
 				AE45A53B1DD4D2DF00EEC956 /* SectionSelectViewController.xib */,
@@ -136,6 +137,7 @@
 				AEB19C311DED2F1000E23C99 /* RegisterViewController.xib */,
 				AE45A51B1DD4CC4600EEC956 /* LaunchScreen.storyboard */,
 				AE45A52A1DD4D03900EEC956 /* ViewController.xib */,
+				AE45A58A1DEDA34100EEC956 /* Main.storyboard */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -231,6 +233,8 @@
 				AE45A52B1DD4D03900EEC956 /* ViewController.xib in Resources */,
 				AEB19C331DED2F1000E23C99 /* RegisterViewController.xib in Resources */,
 				AE45A5471DD4D3C300EEC956 /* HomeViewController.xib in Resources */,
+				AE45A58B1DEDA34100EEC956 /* Main.storyboard in Resources */,
+				AE45A5771DDB932600EEC956 /* FoodViewController.xib in Resources */,
 				AE45A51A1DD4CC4600EEC956 /* Assets.xcassets in Resources */,
 				AEB19C2E1DED2CFA00E23C99 /* RaptorsLogin.db in Resources */,
 			);
@@ -249,6 +253,7 @@
 				AE7C968A1DDE1C6A0089A165 /* Data.m in Sources */,
 				AEB19C321DED2F1000E23C99 /* RegisterViewController.m in Sources */,
 				AE45A50F1DD4CC4600EEC956 /* main.m in Sources */,
+				AE45A5961DEDC04000EEC956 /* MapPin.m in Sources */,
 				AE45A53C1DD4D2DF00EEC956 /* SectionSelectViewController.m in Sources */,
 				AE45A5461DD4D3C300EEC956 /* HomeViewController.m in Sources */,
 				AE45A5411DD4D30E00EEC956 /* SeatSelectViewController.m in Sources */,
