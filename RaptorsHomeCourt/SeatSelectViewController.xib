@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8h-K3-bdT">
-                    <rect key="frame" x="0.0" y="19" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <items>
                         <navigationItem title="Select Seat &amp; Row" id="5Gz-ut-w9X">
                             <barButtonItem key="leftBarButtonItem" title="Back" id="NfZ-9w-AGW"/>
