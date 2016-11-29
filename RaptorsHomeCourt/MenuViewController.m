@@ -1,22 +1,22 @@
 //
-//  FoodViewController.m
+//  MenuViewController.m
 //  RaptorsHomeCourt
 //
-//  Created by Xcode User on 2016-11-15.
+//  Created by Xcode User on 2016-11-29.
 //  Copyright © 2016 Xcode User. All rights reserved.
 //
 
-#import "FoodViewController.h"
+#import "MenuViewController.h"
 
-@interface FoodViewController ()
+@interface MenuViewController ()
 
 @end
 
-@implementation FoodViewController
+@implementation MenuViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
