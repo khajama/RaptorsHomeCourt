@@ -38,6 +38,7 @@
     [self presentViewController:alert animated:YES completion:nil];
     
 }
+
 /* Not sure how to go back to the login page right after registering
  */
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
