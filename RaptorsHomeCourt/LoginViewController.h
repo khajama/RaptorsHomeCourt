@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController<UITextFieldDelegate>
+{
+    IBOutlet UITextField *tfName;
+    IBOutlet UITextField *tfPassword;
+}
+
+@property (nonatomic, strong) IBOutlet UITextField *tfName;
+@property (nonatomic, strong) IBOutlet UITextField *tfPassword;
+
 
 @end
