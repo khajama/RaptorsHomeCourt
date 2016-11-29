@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <sqlite3.h>
 
 @interface AppDelegate ()
 
@@ -14,7 +15,7 @@
 
 @implementation AppDelegate
 
-@synthesize startVC, loginVC, sectionVC, seatVC, homeVC, registerVC, window, selectedURL;
+@synthesize startVC, loginVC, sectionVC, seatVC, homeVC, registerVC, window, selectedURL, databaseName, databasePath, people;
 
 /* Not sure what this does yet /////////////////////
  
@@ -93,12 +94,120 @@
 }
 
 */
-///////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////Page Transition stuff//////////////////////////////////////////////////
+
+
+
+//////////////////////////////Database stuff/////////////////////////////////////////////////
+#pragma mark Database Methods
+
+-(void)checkAndCreateLoginDatabase
+{
+    BOOL success;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    success = [fileManager fileExistsAtPath:self.databasePath];
+    
+    if(success) return;
+    
+    NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:self.databaseName];
+    
+    [fileManager copyItemAtPath:databasePathFromApp toPath:self.databasePath error:nil];
+    
+    return;
+}
+
+-(BOOL)insertIntoLoginDatabase:(Data *)person
+{
+    sqlite3 *database;
+    BOOL returnCode = YES;
+    
+    if(sqlite3_open([self.databasePath UTF8String], &database) == SQLITE_OK)
+    {
+        char *sqlStatement = "insert into entries values(NULL, ?, ?, ?)";
+        sqlite3_stmt *compiledStatement;
+        
+        if(sqlite3_prepare_v2(database, sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK)
+        {
+            sqlite3_bind_text(compiledStatement, 1, [person.user UTF8String], -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(compiledStatement, 2, [person.password UTF8String], -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(compiledStatement, 3, [person.email UTF8String], -1, SQLITE_TRANSIENT);
+            
+        }
+        
+        if(sqlite3_step(compiledStatement) != SQLITE_DONE)
+        {
+            NSLog(@"Error: %s", sqlite3_errmsg(database));
+            returnCode = NO;
+        }
+        else
+        {
+            NSLog(@"Insert into row id = %lld", sqlite3_last_insert_rowid(database));
+        }
+        sqlite3_finalize(compiledStatement);
+    }
+    
+    sqlite3_close(database);
+    return returnCode;
+}
+
+-(void)readDataFromLoginDatabase
+{
+    [self.people removeAllObjects];
+    
+    sqlite3 *database;
+    
+    if(sqlite3_open([self.databasePath UTF8String], &database) == SQLITE_OK)
+    {
+        char *sqlStatement = "select * from entries";
+        sqlite3_stmt *compiledStatement;
+        
+        if(sqlite3_prepare_v2(database,sqlStatement, -1, &compiledStatement, NULL) == SQLITE_OK)
+        {
+            while(sqlite3_step(compiledStatement) == SQLITE_ROW)
+            {
+                char *u = sqlite3_column_text(compiledStatement, 1);
+                NSString *user = [NSString stringWithUTF8String:(char *)u];
+                
+                char *p = sqlite3_column_text(compiledStatement, 2);
+                NSString *password = [NSString stringWithUTF8String:(char *)p];
+                
+                char *e = sqlite3_column_text(compiledStatement, 3);
+                NSString *email = [NSString stringWithUTF8String:(char *)e];
+                
+                Data *data = [[Data alloc] initWithData:user thePassword:password theEmail:email];
+                [self.people addObject:data];
+            }
+        }
+        sqlite3_finalize(compiledStatement);
+        
+    }
+    sqlite3_close(database);
+    
+}
+
+#pragma mark App Methods
+//////////////////////////////Database stuff/////////////////////////////////////////////////
+
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//////////////////////////////Database stuff/////////////////////////////////////////////////
+    self.people = [[NSMutableArray alloc] init];
+    self.databaseName = @"RaptorsLogin.db";
+    
+    NSArray *documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *documentsDir = [documentPaths objectAtIndex:0];
+    self.databasePath = [documentsDir stringByAppendingPathComponent:self.databaseName];
+    
+    [self checkAndCreateLoginDatabase];
+    [self readDataFromLoginDatabase];
     return YES;
+//////////////////////////////Database stuff/////////////////////////////////////////////////
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

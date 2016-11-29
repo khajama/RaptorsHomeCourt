@@ -59,9 +59,9 @@
 -(void)flipToViewSiteHome;
 */
 
--(void)readDataFromDatabase;
--(void)checkAndCreateDatabase;
--(BOOL)insertIntoDatabase:(Data *)person;
+-(void)readDataFromLoginDatabase;
+-(void)checkAndCreateLoginDatabase;
+-(BOOL)insertIntoLoginDatabase:(Data *)person;
 
 @end
 

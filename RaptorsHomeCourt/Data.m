@@ -9,13 +9,14 @@
 #import "Data.h"
 
 @implementation Data
-@synthesize name, password;
+@synthesize user, password, email;
 
--(id)initWithData:(NSString *)n thePassword:(NSString*)p {
+-(id)initWithData:(NSString *)u thePassword:(NSString*)p theEmail: (NSString *)e{
     if(self = [super init])
     {
-        [self setName:n];
+        [self setUser:u];
         [self setPassword:p];
+        [self setEmail:e];
     }
     return self;
 }

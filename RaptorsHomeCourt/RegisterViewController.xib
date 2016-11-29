@@ -7,6 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
             <connections>
+                <outlet property="butRegister" destination="ddh-PC-V1p" id="GW1-Pu-ihe"/>
+                <outlet property="tfRegisterEmail" destination="E28-Lh-xvv" id="Sy0-yY-tV3"/>
+                <outlet property="tfRegisterPassword" destination="NSp-Mb-ts9" id="rIQ-Sh-Iue"/>
+                <outlet property="tfRegisterUser" destination="gGx-Y6-674" id="FX3-xK-dmb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +23,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <items>
                         <navigationItem title="Register" id="Dgn-fT-Bzy">
-                            <barButtonItem key="leftBarButtonItem" title="Back" id="zVK-wL-4sK"/>
+                            <barButtonItem key="leftBarButtonItem" title="Back" id="zVK-wL-4sK">
+                                <connections>
+                                    <action selector="unwindToThisLoginViewController:" destination="-1" id="NHt-m7-Kd4"/>
+                                </connections>
+                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
@@ -47,6 +55,9 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddh-PC-V1p">
                     <rect key="frame" x="127" y="415" width="120" height="41"/>
                     <state key="normal" title="Register!"/>
+                    <connections>
+                        <action selector="addPerson:" destination="-1" eventType="touchUpInside" id="tMn-GM-hEP"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

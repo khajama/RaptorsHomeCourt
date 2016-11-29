@@ -10,13 +10,15 @@
 
 @interface Data : NSObject
 {
-    NSString *name;
+    NSString *user;
     NSString *password;
+    NSString *email;
 }
 
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *user;
 @property (nonatomic, strong) NSString *password;
+@property (nonatomic, strong) NSString *email;
 
--(id)initWithData:(NSString *)n thePassword: (NSString *)p;
+-(id)initWithData:(NSString *)u thePassword: (NSString *)p theEmail: (NSString *)e;
 
 @end

@@ -25,6 +25,7 @@
 		AEB19C2E1DED2CFA00E23C99 /* RaptorsLogin.db in Resources */ = {isa = PBXBuildFile; fileRef = AEB19C2D1DED2CFA00E23C99 /* RaptorsLogin.db */; };
 		AEB19C321DED2F1000E23C99 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB19C301DED2F1000E23C99 /* RegisterViewController.m */; };
 		AEB19C331DED2F1000E23C99 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB19C311DED2F1000E23C99 /* RegisterViewController.xib */; };
+		AEB19C361DEDE21500E23C99 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB19C351DEDE21500E23C99 /* Data.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,12 +51,13 @@
 		AE45A5431DD4D3C300EEC956 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		AE45A5441DD4D3C300EEC956 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		AE7C96881DDE1C6A0089A165 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		AE7C96891DDE1C6A0089A165 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		AEB19C2D1DED2CFA00E23C99 /* RaptorsLogin.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = RaptorsLogin.db; sourceTree = "<group>"; };
 		AEB19C2F1DED2F1000E23C99 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		AEB19C301DED2F1000E23C99 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		AEB19C311DED2F1000E23C99 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		AEB19C341DEDE21500E23C99 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		AEB19C351DEDE21500E23C99 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE45A5901DEDBA1500EEC956 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +74,6 @@
 		AE45A5011DD4CC4600EEC956 = {
 			isa = PBXGroup;
 			children = (
-				AE45A58F1DEDBA1500EEC956 /* MapKit.framework */,
 				AE45A50C1DD4CC4600EEC956 /* RaptorsHomeCourt */,
 				AE45A50B1DD4CC4600EEC956 /* Products */,
 			);
@@ -113,6 +113,8 @@
 		AE45A5241DD4CD1800EEC956 /* Special Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AEB19C341DEDE21500E23C99 /* Data.h */,
+				AEB19C351DEDE21500E23C99 /* Data.m */,
 				AE45A5101DD4CC4600EEC956 /* AppDelegate.h */,
 				AE45A5111DD4CC4600EEC956 /* AppDelegate.m */,
 			);
@@ -129,7 +131,6 @@
 		AE45A5261DD4CD3400EEC956 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				AE45A5751DDB932600EEC956 /* FoodViewController.xib */,
 				AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */,
 				AE45A5401DD4D30E00EEC956 /* SeatSelectViewController.xib */,
 				AE45A53B1DD4D2DF00EEC956 /* SectionSelectViewController.xib */,
@@ -137,7 +138,6 @@
 				AEB19C311DED2F1000E23C99 /* RegisterViewController.xib */,
 				AE45A51B1DD4CC4600EEC956 /* LaunchScreen.storyboard */,
 				AE45A52A1DD4D03900EEC956 /* ViewController.xib */,
-				AE45A58A1DEDA34100EEC956 /* Main.storyboard */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -233,8 +233,6 @@
 				AE45A52B1DD4D03900EEC956 /* ViewController.xib in Resources */,
 				AEB19C331DED2F1000E23C99 /* RegisterViewController.xib in Resources */,
 				AE45A5471DD4D3C300EEC956 /* HomeViewController.xib in Resources */,
-				AE45A58B1DEDA34100EEC956 /* Main.storyboard in Resources */,
-				AE45A5771DDB932600EEC956 /* FoodViewController.xib in Resources */,
 				AE45A51A1DD4CC4600EEC956 /* Assets.xcassets in Resources */,
 				AEB19C2E1DED2CFA00E23C99 /* RaptorsLogin.db in Resources */,
 			);
@@ -252,8 +250,8 @@
 				AE45A5121DD4CC4600EEC956 /* AppDelegate.m in Sources */,
 				AE7C968A1DDE1C6A0089A165 /* Data.m in Sources */,
 				AEB19C321DED2F1000E23C99 /* RegisterViewController.m in Sources */,
+				AEB19C361DEDE21500E23C99 /* Data.m in Sources */,
 				AE45A50F1DD4CC4600EEC956 /* main.m in Sources */,
-				AE45A5961DEDC04000EEC956 /* MapPin.m in Sources */,
 				AE45A53C1DD4D2DF00EEC956 /* SectionSelectViewController.m in Sources */,
 				AE45A5461DD4D3C300EEC956 /* HomeViewController.m in Sources */,
 				AE45A5411DD4D30E00EEC956 /* SeatSelectViewController.m in Sources */,

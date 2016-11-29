@@ -7,12 +7,17 @@
 //
 
 #import "LoginViewController.h"
+#import "AppDelegate.h"
 
 @interface LoginViewController ()
 
 @end
 
 @implementation LoginViewController
+@synthesize tfUser, tfPassword;
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -7,12 +7,70 @@
 //
 
 #import "RegisterViewController.h"
+#import "AppDelegate.h"
 
 @interface RegisterViewController ()
 
 @end
 
 @implementation RegisterViewController
+@synthesize tfRegisterUser, tfRegisterPassword, tfRegisterEmail, butRegister;
+
+
+///////////////////////////////////////////////////////////////////////////
+-(IBAction)addPerson:(id)sender
+{
+    AppDelegate *mainDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    Data *person = [[Data alloc] initWithData:tfRegisterUser.text thePassword:tfRegisterPassword.text theEmail:tfRegisterEmail.text];
+    
+    BOOL returnCode = [mainDelegate insertIntoLoginDatabase:person];
+    
+    NSString *returnMsg = @"Person Added";
+    
+    if(returnCode == NO)
+        returnMsg = @"Person Add Failed";
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"SQLite Insert" message:returnMsg preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+    
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+/* Not sure how to go back to the login page right after registering
+ */
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint touchPoint = [touch locationInView:self.view];
+    
+    CGRect tableFrame = butRegister.frame;
+    
+    if(CGRectContainsPoint(tableFrame, touchPoint))
+    {
+        [self performSegueWithIdentifier:@"RegisterSegueToLogin" sender:self];
+    }
+}
+
+
+-(IBAction)unwindToThisLoginViewController:(UIStoryboardSegue *)sender
+{
+    
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return NO;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
