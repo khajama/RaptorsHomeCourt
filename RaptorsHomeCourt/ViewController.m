@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -14,6 +15,15 @@
 
 @implementation ViewController
 
+/*
+-(IBAction)letsBegin:(id)sender
+{
+    AppDelegate *mainDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [mainDelegate flipToChooseSite];
+}
+*/
+ 
+ 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

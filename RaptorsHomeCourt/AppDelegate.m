@@ -14,6 +14,87 @@
 
 @implementation AppDelegate
 
+@synthesize startVC, loginVC, sectionVC, seatVC, homeVC, registerVC, window, selectedURL;
+
+/* Not sure what this does yet /////////////////////
+ 
+-(void)setupAnimation:(NSInteger)direction
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:ANIMATION_DURATION];
+    
+    if(direction == FORWARD)
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:window cache:YES];
+    else
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:window cache:NO];
+}
+
+-(void)swapViews:(UIView *)from goingTo:(UIView *)to
+{
+    [from removeFromSuperview];
+    [self.window addSubview:to];
+    [UIView commitAnimations];
+ 
+}
+*////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+/* This is just to flip to every page
+ */
+
+-(void) flipToLoginFromBeginning
+{
+    LoginViewController *vc = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    self.loginVC = vc;
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.window cache:YES];
+    [startVC.view removeFromSuperview];
+    [self.window addSubview:loginVC.view];
+    [UIView commitAnimations];
+}
+
+/*
+ 
+ 
+-(void) flipToSettingsHome
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.window cache:NO];
+    [settingsVC.view removeFromSuperview];
+    [self.window addSubview:viewController.view];
+    [UIView commitAnimations];
+    settingsVC = nil;
+}
+
+-(void) flipToTeams
+{
+    TeamsViewController *vc = [[TeamsViewController alloc] initWithNibName:@"TeamsViewController" bundle:nil];
+    self.teamsVC = vc;
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.window cache:YES];
+    [viewController.view removeFromSuperview];
+    [self.window addSubview:teamsVC.view];
+    [UIView commitAnimations];
+}
+
+-(void) flipToTeamsHome
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1.0];
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.window cache:NO];
+    [teamsVC.view removeFromSuperview];
+    [self.window addSubview:viewController.view];
+    [UIView commitAnimations];
+    teamsVC = nil;
+}
+
+*/
+///////////////////////////////////////////////////////////////////////////////////////////////
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

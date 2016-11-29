@@ -10,11 +10,11 @@
 
 @interface LoginViewController : UIViewController<UITextFieldDelegate>
 {
-    IBOutlet UITextField *tfName;
+    IBOutlet UITextField *tfUser;
     IBOutlet UITextField *tfPassword;
 }
 
-@property (nonatomic, strong) IBOutlet UITextField *tfName;
+@property (nonatomic, strong) IBOutlet UITextField *tfUser;
 @property (nonatomic, strong) IBOutlet UITextField *tfPassword;
 
 
