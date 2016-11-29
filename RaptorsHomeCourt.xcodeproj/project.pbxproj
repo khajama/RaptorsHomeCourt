@@ -21,6 +21,9 @@
 		AE45A5421DD4D30E00EEC956 /* SeatSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE45A5401DD4D30E00EEC956 /* SeatSelectViewController.xib */; };
 		AE45A5461DD4D3C300EEC956 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A5441DD4D3C300EEC956 /* HomeViewController.m */; };
 		AE45A5471DD4D3C300EEC956 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */; };
+		AE45A5761DDB932600EEC956 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE45A5741DDB932600EEC956 /* FoodViewController.m */; };
+		AE45A5771DDB932600EEC956 /* FoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE45A5751DDB932600EEC956 /* FoodViewController.xib */; };
+		AE45A58B1DEDA34100EEC956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE45A58A1DEDA34100EEC956 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,10 @@
 		AE45A5431DD4D3C300EEC956 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		AE45A5441DD4D3C300EEC956 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		AE45A5731DDB932600EEC956 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		AE45A5741DDB932600EEC956 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		AE45A5751DDB932600EEC956 /* FoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodViewController.xib; sourceTree = "<group>"; };
+		AE45A58A1DEDA34100EEC956 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +123,14 @@
 		AE45A5261DD4CD3400EEC956 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				AE45A5751DDB932600EEC956 /* FoodViewController.xib */,
 				AE45A5451DD4D3C300EEC956 /* HomeViewController.xib */,
 				AE45A5401DD4D30E00EEC956 /* SeatSelectViewController.xib */,
 				AE45A53B1DD4D2DF00EEC956 /* SectionSelectViewController.xib */,
 				AE45A52E1DD4D09100EEC956 /* LoginViewController.xib */,
 				AE45A51B1DD4CC4600EEC956 /* LaunchScreen.storyboard */,
 				AE45A52A1DD4D03900EEC956 /* ViewController.xib */,
+				AE45A58A1DEDA34100EEC956 /* Main.storyboard */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -139,6 +148,8 @@
 				AE45A53F1DD4D30E00EEC956 /* SeatSelectViewController.m */,
 				AE45A5431DD4D3C300EEC956 /* HomeViewController.h */,
 				AE45A5441DD4D3C300EEC956 /* HomeViewController.m */,
+				AE45A5731DDB932600EEC956 /* FoodViewController.h */,
+				AE45A5741DDB932600EEC956 /* FoodViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -206,6 +217,8 @@
 				AE45A5421DD4D30E00EEC956 /* SeatSelectViewController.xib in Resources */,
 				AE45A52B1DD4D03900EEC956 /* ViewController.xib in Resources */,
 				AE45A5471DD4D3C300EEC956 /* HomeViewController.xib in Resources */,
+				AE45A58B1DEDA34100EEC956 /* Main.storyboard in Resources */,
+				AE45A5771DDB932600EEC956 /* FoodViewController.xib in Resources */,
 				AE45A51A1DD4CC4600EEC956 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +236,7 @@
 				AE45A50F1DD4CC4600EEC956 /* main.m in Sources */,
 				AE45A53C1DD4D2DF00EEC956 /* SectionSelectViewController.m in Sources */,
 				AE45A5461DD4D3C300EEC956 /* HomeViewController.m in Sources */,
+				AE45A5761DDB932600EEC956 /* FoodViewController.m in Sources */,
 				AE45A5411DD4D30E00EEC956 /* SeatSelectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +378,7 @@
 				AE45A5231DD4CC4600EEC956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
