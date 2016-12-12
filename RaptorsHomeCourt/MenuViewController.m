@@ -19,6 +19,15 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)actionHover:(id)sender{
+    UIButton *button = (UIButton *)sender;
+    //button.selected = !button.selected;
+    button.highlighted = !button.highlighted;
+    
+    [button setImage:[UIImage imageNamed:@"enter-hover.png"]
+            forState:UIControlStateHighlighted];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

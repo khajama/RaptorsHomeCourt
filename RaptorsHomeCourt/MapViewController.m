@@ -8,8 +8,10 @@
 
 #import "MapViewController.h"
 #import "MapPin.h"
+@import CoreLocation;
 
-@interface MapViewController ()
+@interface MapViewController () <CLLocationManagerDelegate>
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -26,6 +28,15 @@
     region001.span.longitudeDelta = 0.010f;
     region001.span.latitudeDelta = 0.010f;
     [mapView setRegion:region001 animated:YES];
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    [self.locationManager startUpdatingLocation];
+    
     
     MapPin *ann = [[MapPin alloc] init];
     ann.title = @"Air Canada Center";
@@ -54,6 +65,12 @@
             break;
     }
     
+}
+
+// Location Manager Delegate Methods
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"%@", [locations lastObject]);
 }
 
 -(IBAction)getLocation:(id)sender {
