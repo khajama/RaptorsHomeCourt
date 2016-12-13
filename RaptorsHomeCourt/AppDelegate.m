@@ -13,6 +13,7 @@
 @end
 
 @implementation AppDelegate
+@synthesize viewVC, chooseVC, homeVC, window, selectedURL;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
